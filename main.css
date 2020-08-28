@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: rebeccapurple
+}
+
+
+/* Header/Blog Title */
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background:white;
+    border: 9px ridge royalblue;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 60px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:white;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color:skyblue (49, 52, 233);
+    color: white;
+    border-radius: 30px;
+}
+
+.topnav a:active {
+    background-color:blue;
+    color: white;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    background-color:lightsteelblue;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color:lightsteelblue;
+    padding-left: 20px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+    background-image: url("https://media.springernature.com/w580h326/nature-cms/uploads/collections/2AP1TD2-b598c7937e0cb7c3ddb3d98f6d897d82.jpg");
+    width: 100%;
+    padding: 20px;
+}
+
+.preimg {
+    width: 100%;
+}
+
+.popimg {
+    background-color:lightseagreen;
+    width: 100%;
+}
+
+.abimg {
+    background-image: url("https://img1.sendscraps.com/se/008/068.jpg");
+    width: 100%;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:white;
+    margin-top: 20px;
+    border: 15px ridge lightskyblue;
+    border-radius: 40px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
